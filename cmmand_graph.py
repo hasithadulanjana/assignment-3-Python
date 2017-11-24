@@ -32,7 +32,7 @@ class Bar(Command):
         return "Excuitng a Bar Chart"
 
 
-# pie command
+# pie command this will helps to create a pie chart
 class Pie(Command):
     def execute(self, arg):
         arg = arg.upper()
@@ -48,6 +48,7 @@ class Pie(Command):
             print('The valid options for a scatter graph are salary or sales')
 
     def help(self):
+        # here its printing the help file relevant to the pie
         print(self.file_handler.open_help('pie'))
 
     def name(self):
