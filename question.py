@@ -33,3 +33,41 @@ if(workedYear>=5):
   print("Salary: ",empSalary, "\nNet Bonus: ",netBonus)
 else:
   print("Salary: ",empSalary, "\nNet Bonus: ","No Bonus")
+  
+Q5
+count = 0
+ageList = list(range(3))
+oldestPerson="Oldest Person Age is"
+while count <3:
+  age = int(input("Please Enter the Age : "))
+  ageList.append(age)
+  count=count+1
+print(oldestPerson,max(ageList))
+
+Q7
+print("OUTPUT",abs(int(input("INPUT VALUE : "))))
+
+Q8
+noc =int(input("Number of Class Held :"))
+noa =int(input("Number of Class Attend :"))
+minAttends = 75
+acutalAttend = int(noa/noc*100)
+print('% of Class Attend :',acutalAttend)
+print('Student is notllowed to Attend Exam' if acutalAttend >= minAttends else 'Student is not allowed to Attend Exam')
+
+Q9
+
+noc =int(input("Number of Class Held :"))
+noa =int(input("Number of Class Attend :"))
+minAttends = 75
+acutalAttend = int(noa/noc*100)
+print('% of Class Attend :',acutalAttend)
+if (acutalAttend >= minAttends):
+  print("Student is allowed to Attend Exam")
+elif(True):
+  mc=input("Any Medical issue, Type ('Y' or 'N') :")
+  #to minimize the user error typing cabs or simple letter
+  if(mc.capitalize()=="Y"):
+   print("Student is allowed to Attend Exam")
+  else:
+   print("Student is NOT allowed to Attend Exam")
